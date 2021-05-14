@@ -17,6 +17,7 @@ function load_image(img) {
 function load() {
     console.log("ABC")
     load_image(document.getElementById("teste"))
+    console.log(img.id)
 }
 
 document.getElementById("botao").onclick = load
