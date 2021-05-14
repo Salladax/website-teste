@@ -8,7 +8,8 @@ function load_image(img) {
         if (xhr.status == 200) {
             var blob = xhr.response
             var reader = new FileReader()
-            img.src = reader.readAsDataURL(xhr.response)
+            reader.readAsDataURL(xhr.response)
+            img.src = reader.result
         }
     }
     xhr.send()
