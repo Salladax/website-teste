@@ -1,8 +1,8 @@
 function load_image(img) {
     var xhr = new XMLHttpRequest()
-    xhr.responseType = "blob"
     xhr.open("GET", "uau.png")
-
+    xhr.responseType = "blob"
+    
     xhr.onload = function(e) {
         if (xhr.status == 200) {
             var blob = xhr.response
