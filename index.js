@@ -20,7 +20,7 @@ function load_image(img) {
 
 function load_image(img) {
     var reader = new FileReader()
-    fetch('uau.jpg')
+    fetch('uau.png')
     .then(function(response) {
       return response.blob();
     })
