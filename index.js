@@ -7,10 +7,8 @@ function load_image(img) {
         console.log('kkk')
         if (xhr.status == 200) {
             var blob = xhr.response
-            img.onload = function(e) {
-                URL.revokeObjectURL(img.src)
-            }
-            img.src = URL.createObjectURL(blob)
+            var reader = new FileReader()
+            img.src = reader.readAsDataURL(blob)
         }
     }
     xhr.send()
