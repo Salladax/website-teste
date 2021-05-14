@@ -19,3 +19,5 @@ function load() {
     load_image(document.getElementById("teste"))
 }
 
+document.getElementById("botao").onclick = load
+
