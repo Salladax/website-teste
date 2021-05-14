@@ -7,9 +7,9 @@ function load_image(img) {
         console.log('kkk')
         if (xhr.status == 200) {
             var blob = xhr.response
-            var reader = new FileReader()
+            //var reader = new FileReader()
             console.log(typeof blob)
-            img.src = reader.readAsDataURL(blob)
+            //img.src = reader.readAsDataURL(blob)
         }
     }
     xhr.send()
