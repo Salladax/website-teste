@@ -17,8 +17,9 @@ function load_image(img) {
 }
 function load() {
     console.log("ABC")
-    load_image(document.getElementById("teste"))
+    var img = document.getElementById("teste")
     console.log(img.id)
+    load_image(img)
 }
 
 document.getElementById("botao").onclick = load
