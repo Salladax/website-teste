@@ -4,7 +4,7 @@ function load_image(img) {
     xhr.responseType = "blob"
     
     xhr.onreadystatechange = function(e) {
-        console.log(xhr.status)
+        console.log('kkk')
         if (xhr.status == 200) {
             var blob = xhr.response
             img.onload = function(e) {
@@ -13,6 +13,7 @@ function load_image(img) {
             img.src = URL.createObjectURL(blob)
         }
     }
+    xhr.send()
     console.log("XYZ")
 }
 function load() {
@@ -23,4 +24,3 @@ function load() {
 }
 
 document.getElementById("botao").onclick = load
-
