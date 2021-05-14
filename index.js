@@ -3,7 +3,7 @@ function load_image(img) {
     xhr.open("GET", "uau.png")
     xhr.responseType = "blob"
     
-    xhr.onload = function(e) {
+    xhr.onreadystatechange = function(e) {
         console.log(xhr.status)
         if (xhr.status == 200) {
             var blob = xhr.response
