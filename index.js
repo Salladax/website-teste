@@ -4,6 +4,7 @@ function load_image(img) {
     xhr.responseType = "blob"
     
     xhr.onload = function(e) {
+        console.log(xhr.status)
         if (xhr.status == 200) {
             var blob = xhr.response
             img.onload = function(e) {
