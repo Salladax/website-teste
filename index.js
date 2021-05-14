@@ -15,6 +15,7 @@ function load_image(img) {
     }
 }
 function load() {
+    console.log("ABC")
     load_image(document.getElementById("teste"))
 }
 
