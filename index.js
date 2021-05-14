@@ -1,6 +1,6 @@
 function load_image(img) {
     var xhr = new XMLHttpRequest()
-    xhr.open("GET", "uau.png")
+    xhr.open("GET", "uau.png", true)
     xhr.responseType = "blob"
     
     xhr.onreadystatechange = function(e) {
@@ -13,6 +13,7 @@ function load_image(img) {
             img.src = URL.createObjectURL(blob)
         }
     }
+    console.log("XYZ")
 }
 function load() {
     console.log("ABC")
