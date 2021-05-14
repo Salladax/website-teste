@@ -1,3 +1,4 @@
+/*
 function load_image(img) {
     var xhr = new XMLHttpRequest()
     xhr.open("GET", "uau.png", true)
@@ -14,6 +15,19 @@ function load_image(img) {
     }
     xhr.send()
     console.log("XYZ")
+}
+*/
+
+function load_image(img) {
+    var reader = new FileReader()
+    fetch('uau.jpg')
+    .then(function(response) {
+      return response.blob();
+    })
+    .then(function(myBlob) {
+      var objectURL = URL.createObjectURL(myBlob);
+      img.src = objectURL;
+    });
 }
 function load() {
     console.log("ABC")
